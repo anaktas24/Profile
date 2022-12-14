@@ -1,10 +1,10 @@
 :root{
   font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
-  --text-primary: ;
-  --text-secondary: ;
-  --bg-primary: ;
-  --bg-secondary: ;
+  --text-primary: black;
+  --text-secondary: white;
+  --bg-primary: purple;
+  --bg-secondary: black;
 }
 
 body{
@@ -37,4 +37,37 @@ main{
   height: 100vh;
   position: fixed;
   background-color: var(--bg-primary);
+}
+
+.navbar-nav{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+}
+.nav-item{
+  width: 100%;
+}
+
+.nav-item:last-child{
+  margin-top: auto;
+
+}
+
+.nav-link{
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+
+}
+
+.link-text{
+  display: none;
+  margin-left: 1rem;
 }
